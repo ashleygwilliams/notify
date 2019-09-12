@@ -1,5 +1,5 @@
 [package]
-name = "notify"
+name = "notify-forked"
 version = "5.0.0-pre.2"
 
 description = "Cross-platform filesystem notification library"
@@ -38,7 +38,7 @@ mio-extras = "2.0.5"
 
 [target.'cfg(target_os="macos")'.dependencies]
 fsevent = "1.0.1"
-fsevent-sys = "2"
+fsevent-sys = "=2.0.1"
 
 [target.'cfg(windows)'.dependencies]
 kernel32-sys = "0.2.1"
